@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -48,7 +49,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArasMenu</RootNamespace>
     <AssemblyName>ArasMenu</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>true</IncludeDebugSymbolsInVSIXContainer>
@@ -173,11 +174,20 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Aras.Cryptography">
+      <HintPath>bin\Release\Aras.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="Aras.Diagnostics">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Aras\Ingalls11sp8\Innovator\Server\bin\Aras.Diagnostics.dll</HintPath>
+      <HintPath>bin\Release\Aras.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Aras.Net">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Aras\Ingalls11sp8\Innovator\Server\bin\Aras.Net.dll</HintPath>
+      <HintPath>bin\Release\Aras.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.OAuth.Model">
+      <HintPath>bin\Release\Aras.OAuth.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.OAuth.TokenClient">
+      <HintPath>bin\Release\Aras.OAuth.TokenClient.dll</HintPath>
     </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -191,8 +201,11 @@
     <Reference Include="EnvDTE90, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="IdentityModel">
+      <HintPath>bin\Release\IdentityModel.dll</HintPath>
+    </Reference>
     <Reference Include="IOM">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Aras\Ingalls11sp8\Innovator\Server\bin\IOM.dll</HintPath>
+      <HintPath>bin\Release\IOM.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.CSharp" />

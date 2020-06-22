@@ -47,19 +47,19 @@ namespace ArasMenu
             // 
             // nameQryBox
             // 
-            this.nameQryBox.Location = new System.Drawing.Point(38, 56);
-            this.nameQryBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameQryBox.Location = new System.Drawing.Point(38, 52);
+            this.nameQryBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameQryBox.Name = "nameQryBox";
-            this.nameQryBox.Size = new System.Drawing.Size(197, 20);
+            this.nameQryBox.Size = new System.Drawing.Size(197, 19);
             this.nameQryBox.TabIndex = 0;
             this.nameQryBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nameQryBox_KeyDown);
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(547, 89);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchButton.Location = new System.Drawing.Point(547, 82);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(101, 27);
+            this.searchButton.Size = new System.Drawing.Size(101, 25);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "&Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -67,10 +67,11 @@ namespace ArasMenu
             // 
             // openButton
             // 
-            this.openButton.Location = new System.Drawing.Point(547, 509);
-            this.openButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.openButton.Location = new System.Drawing.Point(547, 470);
+            this.openButton.Margin = new System.Windows.Forms.Padding(2);
             this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(101, 24);
+            this.openButton.Size = new System.Drawing.Size(101, 22);
             this.openButton.TabIndex = 3;
             this.openButton.Text = "&Open";
             this.openButton.UseVisualStyleBackColor = true;
@@ -79,20 +80,20 @@ namespace ArasMenu
             // methodNameLabel
             // 
             this.methodNameLabel.AutoSize = true;
-            this.methodNameLabel.Location = new System.Drawing.Point(35, 30);
+            this.methodNameLabel.Location = new System.Drawing.Point(35, 28);
             this.methodNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.methodNameLabel.Name = "methodNameLabel";
-            this.methodNameLabel.Size = new System.Drawing.Size(77, 13);
+            this.methodNameLabel.Size = new System.Drawing.Size(77, 12);
             this.methodNameLabel.TabIndex = 4;
             this.methodNameLabel.Text = "Method Name:";
             // 
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
-            this.resultLabel.Location = new System.Drawing.Point(35, 125);
+            this.resultLabel.Location = new System.Drawing.Point(35, 115);
             this.resultLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(121, 13);
+            this.resultLabel.Size = new System.Drawing.Size(126, 12);
             this.resultLabel.TabIndex = 5;
             this.resultLabel.Text = "Method Search Results:";
             // 
@@ -100,33 +101,36 @@ namespace ArasMenu
             // 
             this.resultGrid.AllowUserToAddRows = false;
             this.resultGrid.AllowUserToDeleteRows = false;
+            this.resultGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.resultGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultGrid.Location = new System.Drawing.Point(38, 158);
-            this.resultGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resultGrid.Location = new System.Drawing.Point(38, 146);
+            this.resultGrid.Margin = new System.Windows.Forms.Padding(2);
             this.resultGrid.MultiSelect = false;
             this.resultGrid.Name = "resultGrid";
             this.resultGrid.ReadOnly = true;
             this.resultGrid.RowTemplate.Height = 31;
             this.resultGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.resultGrid.Size = new System.Drawing.Size(611, 329);
+            this.resultGrid.Size = new System.Drawing.Size(611, 304);
             this.resultGrid.TabIndex = 6;
             // 
             // codeQryBox
             // 
-            this.codeQryBox.Location = new System.Drawing.Point(383, 56);
-            this.codeQryBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.codeQryBox.Location = new System.Drawing.Point(383, 52);
+            this.codeQryBox.Margin = new System.Windows.Forms.Padding(2);
             this.codeQryBox.Name = "codeQryBox";
-            this.codeQryBox.Size = new System.Drawing.Size(267, 20);
+            this.codeQryBox.Size = new System.Drawing.Size(267, 19);
             this.codeQryBox.TabIndex = 7;
             this.codeQryBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.codeQryBox_KeyDown);
             // 
             // methodCodeLabel
             // 
             this.methodCodeLabel.AutoSize = true;
-            this.methodCodeLabel.Location = new System.Drawing.Point(380, 30);
+            this.methodCodeLabel.Location = new System.Drawing.Point(380, 28);
             this.methodCodeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.methodCodeLabel.Name = "methodCodeLabel";
-            this.methodCodeLabel.Size = new System.Drawing.Size(74, 13);
+            this.methodCodeLabel.Size = new System.Drawing.Size(74, 12);
             this.methodCodeLabel.TabIndex = 8;
             this.methodCodeLabel.Text = "Method Code:";
             // 
@@ -134,43 +138,44 @@ namespace ArasMenu
             // 
             this.typeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.typeBox.FormattingEnabled = true;
-            this.typeBox.ItemHeight = 13;
+            this.typeBox.ItemHeight = 12;
             this.typeBox.Items.AddRange(new object[] {
             "All",
             "C#",
             "JavaScript"});
-            this.typeBox.Location = new System.Drawing.Point(254, 56);
-            this.typeBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.typeBox.Location = new System.Drawing.Point(254, 52);
+            this.typeBox.Margin = new System.Windows.Forms.Padding(2);
             this.typeBox.Name = "typeBox";
-            this.typeBox.Size = new System.Drawing.Size(110, 21);
+            this.typeBox.Size = new System.Drawing.Size(110, 20);
             this.typeBox.TabIndex = 9;
             // 
             // typeLabel
             // 
             this.typeLabel.AutoSize = true;
-            this.typeLabel.Location = new System.Drawing.Point(251, 30);
+            this.typeLabel.Location = new System.Drawing.Point(251, 28);
             this.typeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.typeLabel.Name = "typeLabel";
-            this.typeLabel.Size = new System.Drawing.Size(73, 13);
+            this.typeLabel.Size = new System.Drawing.Size(73, 12);
             this.typeLabel.TabIndex = 10;
             this.typeLabel.Text = "Method Type:";
             // 
             // lockCheck
             // 
+            this.lockCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lockCheck.AutoSize = true;
-            this.lockCheck.Location = new System.Drawing.Point(38, 514);
-            this.lockCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lockCheck.Location = new System.Drawing.Point(38, 474);
+            this.lockCheck.Margin = new System.Windows.Forms.Padding(2);
             this.lockCheck.Name = "lockCheck";
-            this.lockCheck.Size = new System.Drawing.Size(135, 17);
+            this.lockCheck.Size = new System.Drawing.Size(137, 16);
             this.lockCheck.TabIndex = 11;
             this.lockCheck.Text = "&Lock Method On Open";
             this.lockCheck.UseVisualStyleBackColor = true;
             // 
             // MethodSelectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 550);
+            this.ClientSize = new System.Drawing.Size(699, 508);
             this.Controls.Add(this.lockCheck);
             this.Controls.Add(this.typeLabel);
             this.Controls.Add(this.typeBox);
@@ -183,7 +188,7 @@ namespace ArasMenu
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.nameQryBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MethodSelectionForm";
